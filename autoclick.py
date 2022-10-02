@@ -4,6 +4,11 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://mysite.com")
+
+# For anchor tag
+anchor = driver.find_element(By.TAG_NAME, "a")
+
+# For Styles & Scripts
 links = driver.find_elements(By.TAG_NAME, "link")
 scripts = driver.find_elements(By.TAG_NAME, "script")
 
